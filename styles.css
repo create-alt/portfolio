@@ -151,6 +151,10 @@ header nav ul li a {
     color: blue;
 }
 
+#Scratch_icon {
+    height: 50px;
+}
+
 .skill-item {
     background-color: #f4f4f4;
     padding: 20px;
