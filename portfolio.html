@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ | 辰己由空</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ポートフォリオ | rayu</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>辰己由空</h1>
-            <h2>Tatsumi Yura</h2>
-            <div class="contact-info">
-                <p>メール: <a href="mailto:toshikakimika@gmail.com">your-email@example.com</a></p>
-                <p><a href="https://github.com/create-alt">GitHub</a></p>
-            </div>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <section id="profile">
-            <h2>プロフィール</h2>
-            <p>私は高専に通う2年生で、情報系のコースに通っています。特にAIに関心があり、資格取得やコンペティションへの参加などを通して学習を進めています。</p>
-        </section>
+    <h1 id="main_title">rayuのポートフォリオ</h1>
 
-        <section id="skills">
-            <h2>スキルセット</h2>
-            <ul>
-                <li>プログラミング言語: Python, C++</li>
-                <li>データベース: MySQL</li>
-                <li>ツール: Git</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>成果物</h2>
-            <div class="project">
-                <h3>Cifar-10/Cifar-100分類モデル</h3>
-                <p>概要: プロジェクトの目的、機能、および技術スタックについて述べます。</p>
-                <p>リンク: <a href="#">プロジェクトへのリンク</a></p>
+    <!-- プロジェクトセクション -->
+    <section id="projects" class="section">
+        <h2>プロジェクト</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <!-- <img src="project1.jpg" alt="プロジェクト1"> -->
+                <h3>Cifar-10/Cifar-100 分類モデル</h3>
+                <p>Cifar-10/Cifar-100とは、10/100クラスの画像データのことです。これを高精度で分類できるAIを作成しました。</p>
+                <p>高専テクノゼミ主催の実践教育プログラムでCifar-10分類モデルを</p>
+                <p>本高専のプログラミング1の授業内の自由課題でCifar-100の分類モデルを作成しました。</p>
+                <a href="https://github.com/create-alt/CNN_for_Cifar10" class="btn">Cifar-10のプロジェクトを見る</a>
+                <a href="https://github.com/create-alt/CNN_for_Cifar100" class="btn">Cifar-100のプロジェクトを見る</a>
             </div>
-            <div class="project">
-                <h3>プロジェクト名2</h3>
-                <p>概要: プロジェクトの内容や特徴を簡単に紹介します。</p>
-                <p>役割: チームリーダーとして、アーキテクチャ設計を行いました。</p>
-                <p>リンク: <a href="#">プロジェクトへのリンク</a></p>
+            <div class="project-card">
+                <h3>シューティングゲーム</h3>
+                <img src="project2.jpg" alt="プロジェクト2">
+                <p>高専祭に向けてグループでシューティングゲームを作成しました。</p>
+                <p>私は主にマイコンとの通信や玉の発射などのゲームの基礎的な箇所を作成しました。</p>
+                <a href="#" class="btn">プロジェクトを見る</a>
             </div>
-            <div class="project">
-                <h3>プロジェクト名3</h3>
-                <p>概要: APIの機能や使用目的について説明します。</p>
-                <p>役割: バックエンドの設計と実装を担当しました。</p>
-                <p>リンク: <a href="#">プロジェクトへのリンク</a></p>
+            <div class="project-card">
+                <h3>高専プロコン競技部門</h3>
+                <img src="project2.jpg" alt="プロジェクト2">
+                <p>高専プロコンの出場時に、</p>
+                <a href="#" class="btn">プロジェクトを見る</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education">
-            <h2>学歴</h2>
-            <p>学位名 - 大学名 (卒業年)</p>
-        </section>
-
-        <section id="experience">
-            <h2>職歴</h2>
-            <div class="job">
-                <h3>会社名 - 役職名</h3>
-                <p>期間: YYYY年MM月 ～ YYYY年MM月</p>
-                <p>業務内容: 担当業務や達成した成果を簡潔に記載します。</p>
+    <!-- スキルセクション -->
+    <section id="skills" class="section">
+        <h2>スキル</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <ion-icon name="logo-html5" size="large" id="html_icon"></ion-icon>
+                <ion-icon name="logo-css3" size="large" id="css_icon"></ion-icon>
+                <h3>HTML & CSS</h3>
+                <p>本ポートフォリオの作成に使用しました。</p>
             </div>
-        </section>
+            <div class="skill-item">
+                <img src="img/python-icon.svg" alt="python" id="python_icon">
+                <h3>Python</h3>
+                <p>人工知能の開発や<a href="https://www.procon.gr.jp/">高専プログラミングコンテスト</a>の通信機能の開発などの際に使用しています。
+                </p>
+            </div>
+            <div class="skill-item">
+                <img src="img/Scratch.svg" alt="Scratch" id="Scratch_icon">
+                <h3>Scratch</h3>
+                <p>2週間に一度プログラミング教室のアルバイトとして働いており、小中学生にScratchを教えています。</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="certifications">
-            <h2>認定資格</h2>
-            <ul>
-                <li>JDLA Deep Learning for ENGINEER2024#2(通称：E資格) (2024年)</li>
-            </ul>
-        </section>
 
-        <section id="hobbies">
-            <h2>趣味・活動</h2>
-            <p>技術に関連する趣味や、参加しているコミュニティなどを記載します。</p>
-        </section>
-    </main>
+    <!-- 自己紹介セクション -->
+    <section id="about" class="section">
+        <h2>自己紹介</h2>
+        <p></p>
+    </section>
 
     <footer>
-        <p>&copy; 2023 あなたの名前. All rights reserved.</p>
+        <p>&copy; 2024 rayu. All Rights Reserved.</p>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
