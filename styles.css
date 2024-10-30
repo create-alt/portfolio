@@ -137,23 +137,31 @@ header nav ul li a {
 }
 
 #html_icon {
-    height: 50px;
+    height: 96px;
+    width:  98px;
     color: coral;
 }
 
 #css_icon {
-    height: 50px;
+    height: 96px;
+    width:  98px;
     color: #3498db;
 }
 
-#python_icon {
-    height: 50px;
+#cpp{
     color: blue;
 }
 
-#Scratch_icon {
-    height: 50px;
+#cshape{
+    color:purple;
 }
+
+.icons {
+    height: 96px;
+    width:  98px;
+}
+
+
 
 .skill-item {
     background-color: #f4f4f4;
