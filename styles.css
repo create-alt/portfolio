@@ -179,7 +179,7 @@ header nav ul li a {
 /* スキルセクションのデザイン */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     margin-top: 30px;
 }
