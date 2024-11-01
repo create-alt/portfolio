@@ -29,14 +29,75 @@
 
     <!-- 自己紹介セクション -->
     <section id="about" class="section">
-        <h2>自己紹介</h2>
+        <h2>about me</h2>
         <p>大阪公立大学工業高等専門学校（OMUCT）の知能情報コースに通う学生です。</p>　　
-        <h3>経歴</h3>
+        <h3>career</h3>
+        <!-- 経歴の木状リスト -->
+        <ul class="timeline">
+            <li>
+                <div class="timeline-content">
+                    <h4>2023年 - 4月</h4>
+                    <p>大阪公立大学工業高等専門学校入学</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2023年 - 11月</h4>
+                    <p>
+                        <a
+                            href="https://www.sansokan.jp/events/eve_detail.san?H_A_NO=42321">令和5年度スタートアップチャレンジ甲子園</a>本選出場
+                        <br>Best Potential Award受賞
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2024年 - 2月</h4>
+                    <p>松尾研主催 GCI winter 2024修了</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2024年 - 3月</h4>
+                    <p>高専テクノゼミ主催 実践教育プログラム 修了</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2024年 - 4月</h4>
+                    <p>学年首席で2年知能情報コース進級</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2024年 - 7月</h4>
+                    <p>松尾研主催 DL基礎講座 2024修了</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2024年 - 9月</h4>
+                    <p>JDLA E資格合格</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2024年 - 9月</h4>
+                    <p>パソコン甲子園2024プログラミング部門成績優秀者</p>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-content">
+                    <h4>2024年 - 10月</h4>
+                    <p>高専プログラミングコンテスト出場</p>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <!-- プロジェクトセクション -->
     <section id="projects" class="section">
-        <h2>プロジェクト</h2>
+        <h2>projects</h2>
         <div class="project-grid">
             <div class="project-card">
                 <!-- <img src="project1.jpg" alt="プロジェクト1"> -->
@@ -51,12 +112,12 @@
                 <h3>シューティングゲーム</h3>
                 <img src="project2.jpg" alt="プロジェクト2">
                 <p>高専祭に向けてグループでシューティングゲームを作成しました。</p>
-                <p>私は主にマイコンとの通信や玉の発射などのゲームの基礎的な箇所を作成しました。</p>
-                <a href="#" class="btn">プロジェクトを見る</a>
+                <p>私は主にマイコンとの通信や玉の発射などのゲームの土台となる箇所の開発を担当しました。</p>
+                <a href="https://github.com/create-alt/HackU_new" class="btn">プロジェクトを見る</a>
             </div>
             <div class="project-card">
                 <h3>高専プロコン競技部門</h3>
-                <img src="project2.jpg" alt="プロジェクト2">
+                <img src="project2.jpg" alt="プロジェクト3">
                 <p>2年秋に<a
                         href="https://www.procon.gr.jp/?cat=1686">高専プロコン2024</a>に出場しました。サーバーとの通信やタスク解決のためのアルゴリズムの実装を行い、コーディング能力を高められました。
                 </p>
@@ -67,7 +128,7 @@
 
     <!-- スキルセクション -->
     <section id="skills" class="section">
-        <h2>スキル</h2>
+        <h2>skills</h2>
         <div class="skills-grid">
             <div class="skill-item">
                 <ion-icon name="logo-html5" size="large" class="icons" id="html_icon"></ion-icon>
@@ -82,6 +143,17 @@
                 </p>
             </div>
             <div class="skill-item">
+                <img src="img/c.svg" alt="C++" class="icons" id="cpp">
+                <h3>C++</h3>
+                <p>AtCoderやプログラミング甲子園などの競技プログラミングや、上述した高専プロコン、授業内のArduinoを使用した実習などで使用しています。</p>
+            </div>
+            <div class="skill-item">
+                <img src="img\U_Cube_1C_Black.svg" alt="Unity" class="icons" id="unity"><img src="img/c--4.svg" alt="C#"
+                    class="icons" id="cshape">
+                <h3>Unity/C#</h3>
+                <p>高専祭で作成したシューティングゲームの実装時に、UnityとC#を使用しました。</p>
+            </div>
+            <div class="skill-item">
                 <img src="img/Scratch_icon.png" alt="Scratch" class="icons">
                 <h3>Scratch</h3>
                 <p>2週間に一度プログラミング教室のアルバイトとして働いており、小中学生にScratchを教えています。</p>
@@ -92,32 +164,27 @@
                 <p>共同開発時や作品制作時に進捗保存のためにgit/GitHubを積極的に使用しています。</p>
             </div>
             <div class="skill-item">
-                <img src="img/c.svg" alt="C++" class="icons" id="cpp">
-                <h3>C++</h3>
-                <p>AtCoderやプログラミング甲子園などの競技プログラミングや、上述した高専プロコン、授業内のArduinoを使用した実習などで使用しています。</p>
-            </div>
-            <div class="skill-item">
-                <img src="img\U_Cube_1C_Black.svg" alt="Unity" class="icons" id="unity"><img src="img/c--4.svg" alt="C#"
-                    class="icons" id="cshape">
-                <h3>Unity/C#</h3>
-                <p>高専祭で作成したシューティングゲームの実装時に、UnityとC#を使用しました。</p>
-            </div>
-            <div class="skill-item">
-                <a href="https://www.jdla.org/certificate/engineer/"><img src="img/E.png" alt="E資格認定バッジ"
-                        class="icons"></a>
+                <a href="https://www.jdla.org/certificate/engineer/">
+                    <img src="img/E.png" alt="E資格認定バッジ" class="icons">
+                </a>
+
                 <h3>E資格</h3>
-                <p>高専2年次にJDLAのE資格に合格しました。受験までの学習を通してAIのアーキテクチャや理論について理解を深めることができました。</p>
+                <p>高専2年次にJDLAのE資格に合格しました。受験までの学習でAIのアーキテクチャや理論について理解を深めることができました。</p>
+                <p>受験にあたって試験範囲の数学範囲だけですがqiitaで<a
+                        href="https://qiita.com/Chili-Oil/items/17389747a08364b27f20">解説記事</a>を執筆しました。</p>
             </div>
             <div class="skill-item">
-                <img src="img/c.svg" alt="C++" class="icons" id="cpp">
-                <h3>C++</h3>
-                <p>AtCoderやプログラミング甲子園などの競技プログラミングや、上述した高専プロコン、授業内のArduinoを使用した実習などで使用しています。</p>
+                <img src="img/AI.png" alt="AI" class="icons">
+                <h3>データ分析コンペ</h3>
+                <p><a href="https://signate.jp/competitions">SIGNATE</a>や<a
+                        href="https://competition.nishika.com/">Nisika</a>などのデータ分析コンペプラットフォームで各種コンペティションに参加しています。</p>
+                <p><a href="https://signate.jp/users/183394">SIGNATEマイページ</a></p>
+                <p><a href="https://competition.nishika.com/users/3Zy1aQMevrQ8M9Y2">Nishikaマイページ</a></p>
             </div>
             <div class="skill-item">
-                <img src="img\U_Cube_1C_Black.svg" alt="Unity" class="icons" id="unity"><img src="img/c--4.svg" alt="C#"
-                    class="icons" id="cshape">
-                <h3>Unity/C#</h3>
-                <p>高専祭で作成したシューティングゲームの実装時に、UnityとC#を使用しました。</p>
+                <img src="img\Microsoft-logo_rgb_c-gray.png" alt="Microsoft" id="Microsoft">
+                <h3>Office soft</h3>
+                <p>Word,PowerPoint,ExcelといったOffice製品を授業内や外部イベントで積極的に使用しています。</p>
             </div>
             <div class="skill-item">
                 <a href="https://www.jdla.org/certificate/engineer/">
@@ -126,13 +193,15 @@
 
                 <h3>E資格</h3>
                 <p>高専2年次にJDLAのE資格に合格しました。受験までの学習を通してAIのアーキテクチャや理論について理解を深めることができました。</p>
+                <p>受験にあたって試験範囲の数学範囲だけですがqiitaで<a
+                        href="https://qiita.com/Chili-Oil/items/17389747a08364b27f20">解説記事</a>を執筆しました。</p>
             </div>
 
         </div>
     </section>
 
     <section id="contact" class="section">
-        <h2>連絡先</h2>
+        <h2>contact</h2>
         <p>個人用メールアドレス:toshikakimika@gmail.com</p>
         <p>学校用メールアドレス:rj23078e@st.omu.ac.jp</p>
     </section>

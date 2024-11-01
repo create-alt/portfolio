@@ -127,6 +127,54 @@ header nav ul li a {
     background-color: #0056b3;
 }
 
+/* 経歴の木状リストのスタイル */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    /* 中央寄せ */
+    max-width: 600px;
+    /* 幅を制限 */
+    position: relative;
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 20px;
+    margin: 20px 0;
+    /* 各項目に余白 */
+}
+
+/* その他のスタイルはそのまま */
+.timeline li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    border-left: 2px solid #3498db;
+}
+
+.timeline li::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3498db;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /* スキルセクションのデザイン */
 .skills-grid {
@@ -136,29 +184,31 @@ header nav ul li a {
     margin-top: 30px;
 }
 
+
+.icons {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
 #html_icon {
-    height: 96px;
-    width:  98px;
     color: coral;
 }
 
 #css_icon {
-    height: 96px;
-    width:  98px;
     color: #3498db;
 }
 
-#cpp{
+#cpp {
     color: blue;
 }
 
-#cshape{
-    color:purple;
+#cshape {
+    color: purple;
 }
 
-.icons {
+#Microsoft {
     height: 96px;
-    width:  98px;
 }
 
 
