@@ -11,11 +11,6 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #222;
-    padding: 10px 20px;
-}
-
 header nav ul {
     display: flex;
     list-style: none;
@@ -31,6 +26,54 @@ header nav ul li a {
     text-decoration: none;
     font-weight: 600;
 }
+
+/* ハンバーガーメニューアイコンのスタイル */
+.menu-icon {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 40px;
+    /* background-color: #333; */
+}
+
+/* メニューの初期スタイル */
+.menu {
+    display: none; /* デフォルトでは非表示 */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* アイコンの真下に配置 */
+    left: 20px;
+    background-color: #333;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+/* メニュー項目のスタイル */
+.menu li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #222;
+    padding: 10px 20px;
+}
+
 
 #main_title {
     display: flex;
@@ -127,51 +170,51 @@ header nav ul li a {
     background-color: #0056b3;
 }
 
-/* 経歴の木状リストのスタイル */
 .timeline {
     list-style: none;
     padding: 0;
     margin: 20px auto;
-    /* 中央寄せ */
     max-width: 600px;
-    /* 幅を制限 */
     position: relative;
 }
 
 .timeline li {
     position: relative;
-    padding-left: 20px;
+    padding-left: 40px; /* Space between circle and text */
     margin: 20px 0;
-    /* 各項目に余白 */
+    display: flex;
+    align-items: center; /* Center-aligns the circle vertically with the text */
 }
 
-/* その他のスタイルはそのまま */
 .timeline li::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 10px;
-    height: 100%;
-    border-left: 2px solid #3498db;
+    left: 12px; /* Adjust position of the vertical line */
+    width: 2px;
+    height: 150%;
+    background-color: #3498db;
 }
 
 .timeline li::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: -10px;
-    width: 20px;
-    height: 20px;
+    top: 50%; /* Center circle vertically */
+    left: 5px; /* Horizontal position of the circle */
+    transform: translateY(-50%); /* Adjust to perfectly center */
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #3498db;
 }
 
 .timeline-content {
-    background: #f9f9f9;
+    /* background: #f9f9f9; */
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* 文章の中央揃え */
+    width: 100%; /* 必要に応じて幅を調整 */
 }
 
 
