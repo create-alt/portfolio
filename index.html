@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ポートフォリオ | rayu</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="main_title">rayuのポートフォリオ</h1>
+
+    <!-- 自己紹介セクション -->
+    <section id="about" class="section">
+        <h2>自己紹介</h2>
+        <p>大阪公立大学工業高等専門学校（OMUCT）の知能情報コースに通う学生です。</p>　　
+        <h3>経歴</h3>
+    </section>
+
+    <!-- プロジェクトセクション -->
+    <section id="projects" class="section">
+        <h2>プロジェクト</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <!-- <img src="project1.jpg" alt="プロジェクト1"> -->
+                <h3>Cifar-10/Cifar-100 分類モデル</h3>
+                <p>Cifar-10/Cifar-100とは、10/100クラスの画像データのことです。これを高精度で分類できるAIを作成しました。</p>
+                <p>高専テクノゼミ主催の実践教育プログラムでCifar-10分類モデルを</p>
+                <p>本高専のプログラミング1の授業内の自由課題でCifar-100の分類モデルを作成しました。</p>
+                <a href="https://github.com/create-alt/CNN_for_Cifar10" class="btn">Cifar-10のプロジェクトを見る</a>
+                <a href="https://github.com/create-alt/CNN_for_Cifar100" class="btn">Cifar-100のプロジェクトを見る</a>
+            </div>
+            <div class="project-card">
+                <h3>シューティングゲーム</h3>
+                <img src="project2.jpg" alt="プロジェクト2">
+                <p>高専祭に向けてグループでシューティングゲームを作成しました。</p>
+                <p>私は主にマイコンとの通信や玉の発射などのゲームの基礎的な箇所を作成しました。</p>
+                <a href="#" class="btn">プロジェクトを見る</a>
+            </div>
+            <div class="project-card">
+                <h3>高専プロコン競技部門</h3>
+                <img src="project2.jpg" alt="プロジェクト2">
+                <p>2年秋に<a
+                        href="https://www.procon.gr.jp/?cat=1686">高専プロコン2024</a>に出場しました。サーバーとの通信やタスク解決のためのアルゴリズムの実装を行い、コーディング能力を高められました。
+                </p>
+                <a href="#" class="btn">プロジェクトを見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="section">
+        <h2>スキル</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <ion-icon name="logo-html5" size="large" class="icons" id="html_icon"></ion-icon>
+                <ion-icon name="logo-css3" size="large" class="icons" id="css_icon"></ion-icon>
+                <h3>HTML & CSS</h3>
+                <p>本ポートフォリオの作成に使用しました。</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/python-icon.svg" alt="python" class="icons">
+                <h3>Python</h3>
+                <p>人工知能の開発や<a href="https://www.procon.gr.jp/">高専プログラミングコンテスト</a>の通信機能の開発などの際に使用しています。
+                </p>
+            </div>
+            <div class="skill-item">
+                <img src="img/Scratch_icon.png" alt="Scratch" class="icons">
+                <h3>Scratch</h3>
+                <p>2週間に一度プログラミング教室のアルバイトとして働いており、小中学生にScratchを教えています。</p>
+            </div>
+            <div class="skill-item">
+                <a href="https://github.co.jp/"><img src="img/github-mark.svg" alt="github-mark" class="icons"></a>
+                <h3>GitHub</h3>
+                <p>共同開発時や作品制作時に進捗保存のためにgit/GitHubを積極的に使用しています。</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/c.svg" alt="C++" class="icons" id="cpp">
+                <h3>C++</h3>
+                <p>AtCoderやプログラミング甲子園などの競技プログラミングや、上述した高専プロコン、授業内のArduinoを使用した実習などで使用しています。</p>
+            </div>
+            <div class="skill-item">
+                <img src="img\U_Cube_1C_Black.svg" alt="Unity" class="icons" id="unity"><img src="img/c--4.svg" alt="C#"
+                    class="icons" id="cshape">
+                <h3>Unity/C#</h3>
+                <p>高専祭で作成したシューティングゲームの実装時に、UnityとC#を使用しました。</p>
+            </div>
+            <div class="skill-item">
+                <a href="https://www.jdla.org/certificate/engineer/"><img src="img/E.png" alt="E資格認定バッジ"
+                        class="icons"></a>
+                <h3>E資格</h3>
+                <p>高専2年次にJDLAのE資格に合格しました。受験までの学習を通してAIのアーキテクチャや理論について理解を深めることができました。</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/c.svg" alt="C++" class="icons" id="cpp">
+                <h3>C++</h3>
+                <p>AtCoderやプログラミング甲子園などの競技プログラミングや、上述した高専プロコン、授業内のArduinoを使用した実習などで使用しています。</p>
+            </div>
+            <div class="skill-item">
+                <img src="img\U_Cube_1C_Black.svg" alt="Unity" class="icons" id="unity"><img src="img/c--4.svg" alt="C#"
+                    class="icons" id="cshape">
+                <h3>Unity/C#</h3>
+                <p>高専祭で作成したシューティングゲームの実装時に、UnityとC#を使用しました。</p>
+            </div>
+            <div class="skill-item">
+                <a href="https://www.jdla.org/certificate/engineer/">
+                    <img src="img/E.png" alt="E資格認定バッジ" class="icons">
+                </a>
+
+                <h3>E資格</h3>
+                <p>高専2年次にJDLAのE資格に合格しました。受験までの学習を通してAIのアーキテクチャや理論について理解を深めることができました。</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>連絡先</h2>
+        <p>個人用メールアドレス:toshikakimika@gmail.com</p>
+        <p>学校用メールアドレス:rj23078e@st.omu.ac.jp</p>
+    </section>
+
+
+    <!-- <footer>
+        <p>&copy; 2024 rayu. All Rights Reserved.</p>
+    </footer> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
