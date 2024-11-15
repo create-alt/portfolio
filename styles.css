@@ -38,10 +38,12 @@ header nav ul li a {
 
 /* メニューの初期スタイル */
 .menu {
-    display: none; /* デフォルトでは非表示 */
+    display: none;
+    /* デフォルトでは非表示 */
     flex-direction: column;
     position: absolute;
-    top: 60px; /* アイコンの真下に配置 */
+    top: 60px;
+    /* アイコンの真下に配置 */
     left: 20px;
     background-color: #333;
     width: 200px;
@@ -133,9 +135,11 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* カードに影を追加 */
     margin-bottom: 20px;
-    /* カードの間に余白を追加 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .project-card img {
@@ -180,17 +184,20 @@ header {
 
 .timeline li {
     position: relative;
-    padding-left: 40px; /* Space between circle and text */
+    padding-left: 40px;
+    /* Space between circle and text */
     margin: 20px 0;
     display: flex;
-    align-items: center; /* Center-aligns the circle vertically with the text */
+    align-items: center;
+    /* Center-aligns the circle vertically with the text */
 }
 
 .timeline li::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 12px; /* Adjust position of the vertical line */
+    left: 12px;
+    /* Adjust position of the vertical line */
     width: 2px;
     height: 150%;
     background-color: #3498db;
@@ -199,9 +206,12 @@ header {
 .timeline li::after {
     content: "";
     position: absolute;
-    top: 50%; /* Center circle vertically */
-    left: 5px; /* Horizontal position of the circle */
-    transform: translateY(-50%); /* Adjust to perfectly center */
+    top: 50%;
+    /* Center circle vertically */
+    left: 5px;
+    /* Horizontal position of the circle */
+    transform: translateY(-50%);
+    /* Adjust to perfectly center */
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -213,8 +223,10 @@ header {
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; /* 文章の中央揃え */
-    width: 100%; /* 必要に応じて幅を調整 */
+    text-align: center;
+    /* 文章の中央揃え */
+    width: 100%;
+    /* 必要に応じて幅を調整 */
 }
 
 
