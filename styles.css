@@ -124,8 +124,8 @@ header {
 
 .slideshow-container {
     position: relative;
-    width: 400px; /* 固定幅 */
-    height: 240px; /* 固定高さ */
+    width: 350px; /* 固定幅 */
+    height: 200px; /* 固定高さ */
     margin: auto;
     overflow: hidden;
     background: #f0f0f0; /* 背景色（必要に応じて） */
