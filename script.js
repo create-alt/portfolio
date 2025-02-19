@@ -1,22 +1,27 @@
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
-}
+document.addEventListener("DOMContentLoaded", function () {
+    // 全てのスライドショーを初期化
+    document.querySelectorAll(".slideshow-container").forEach((slideshow, index) => {
+        let slides = slideshow.querySelectorAll(".slide");
+        let currentIndex = 0;
 
-let currentSlide = 0;
-showSlide(currentSlide);
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === n) ? "block" : "none";
+            });
+        }
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slide');
-    if (index >= slides.length) currentSlide = 0;
-    if (index < 0) currentSlide = slides.length - 1;
+        function changeSlide(step) {
+            currentIndex += step;
+            if (currentIndex >= slides.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = slides.length - 1;
+            showSlide(currentIndex);
+        }
 
-    slides.forEach((slide, i) => {
-        slide.style.display = (i === currentSlide) ? 'block' : 'none';
+        // 初期スライドを表示
+        showSlide(currentIndex);
+
+        // ボタンイベントを設定
+        slideshow.querySelector(".prev").addEventListener("click", () => changeSlide(-1));
+        slideshow.querySelector(".next").addEventListener("click", () => changeSlide(1));
     });
-}
-
-function changeSlide(step) {
-    currentSlide += step;
-    showSlide(currentSlide);
-}
+});
