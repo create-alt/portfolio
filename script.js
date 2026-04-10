@@ -25,3 +25,24 @@ document.addEventListener("DOMContentLoaded", function () {
         slideshow.querySelector(".next").addEventListener("click", () => changeSlide(1));
     });
 });
+
+// タブ切り替え機能
+function openTab(evt, tabName) {
+    let i, tabcontent, tablinks;
+    
+    // 全てのタブコンテンツを非表示にする
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    
+    // 全てのタブボタンから "active" クラスを削除する
+    tablinks = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    
+    // 選択されたタブを表示し、ボタンをアクティブにする
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
