@@ -450,3 +450,20 @@ footer {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Researchセクション */
+.research-grid {
+    align-items: stretch;
+}
+
+.research-card {
+    min-height: 100%;
+}
+
+.research-card h3 {
+    margin-bottom: 15px;
+}
+
+.research-card p {
+    line-height: 1.8;
+}
